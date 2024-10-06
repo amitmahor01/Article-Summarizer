@@ -1,0 +1,86 @@
+#main-container{
+    background-color: #C9DABF;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+}
+#container{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 10vh;
+}
+#summarize-url{
+    width: 30vw;
+    height: 3vh;
+    border-radius: 5px;
+}
+
+.button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #677D6A;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Adding content before the button */
+  .button::before {
+    content: '★';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Hover state on the button */
+  .button:hover {
+    background-color: #40534C;
+  }
+
+  /* Making the before element visible on hover */
+  .button:hover::before {
+    opacity: 1;
+  }
+
+  /* Styling after pseudo-element */
+  .button::after {
+    content: ' →';
+    padding-left: 10px;
+    transition: padding-left 0.3s ease;
+  }
+
+  /* Animating after element on hover */
+  .button:hover::after {
+    padding-left: 30px;
+  }
+
+  /* Focus effect */
+  .button:focus {
+    outline: 2px solid #f39c12;
+  }
+
+  /* Adding more effects on focus for before and after */
+  .button:focus::before {
+    color: #f39c12;
+  }
+  .button:focus::after {
+    color: #f39c12;
+  }
+
+  #summarize-url-output{
+height:60vh ;
+width: 42vw;
+border: 2px #1A3636 solid;
+border-radius: 2px;
+opacity: 0.4;
+background-color: #9CA986 ;
+padding-left: 20px;
+padding-top: 10px;
+  }
